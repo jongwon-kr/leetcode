@@ -17,11 +17,12 @@ class Solution {
     }
 
     void dfs(List<String> result, Map<String, PriorityQueue<String>> map, String from){
-        
+
         while(map.containsKey(from) && !map.get(from).isEmpty()){
             dfs(result, map, map.get(from).poll());
         }
 
-        result.add(0, from);
+        result.add(0,from);
     }
+
 }
