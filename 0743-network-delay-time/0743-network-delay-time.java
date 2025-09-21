@@ -1,40 +1,51 @@
-import java.util.*;
-import java.io.*;
+class Pair {
+    int node, distance;
+    public Pair(int node, int distance) {
+        this.node = node;
+        this.distance = distance;
+    }
+}
 
 class Solution {
-
     public int networkDelayTime(int[][] times, int n, int k) {
-        Map<Integer, Map<Integer, Integer>> graph = new HashMap<>();
-
-        for(int[] time : times){
-            graph.putIfAbsent(time[0] , new HashMap<>());
-            graph.get(time[0]).put(time[1], time[2]);
+        ArrayList<ArrayList<Pair>> adjList = new ArrayList<>();
+        int[] distance = new int[n+1];
+        for(int i = 0; i <= n; i++) {
+            adjList.add(new ArrayList<Pair>());
+            distance[i] = Integer.MAX_VALUE;
         }
 
-        Queue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<>(Map.Entry.comparingByValue());
-        pq.add(new AbstractMap.SimpleEntry<>(k, 0));
+        for(int i = 0; i < times.length; i++) {
+            adjList.get(times[i][0]).add(new Pair(times[i][1], times[i][2]));
+        }
 
-        Map<Integer, Integer> dist = new HashMap<>();
-        while(!pq.isEmpty()){
-            Map.Entry<Integer, Integer> cur = pq.poll();
-            int u = cur.getKey();
-            int dist_u = cur.getValue();
+        distance[k] = 0;
+        PriorityQueue<Pair> pq = new PriorityQueue<Pair>(Comparator.comparing((Pair p)-> p.distance).reversed());
+        pq.add(new Pair(k,0));
 
-            if(!dist.containsKey(u)){
-                dist.put(u, dist_u);
-                if(graph.containsKey(u)){
-                    for(Map.Entry<Integer, Integer> v : graph.get(u).entrySet()){
-                        int alt = dist_u + v.getValue();
-                        pq.add(new AbstractMap.SimpleEntry<>(v.getKey(), alt));
-                    }
+        while(!pq.isEmpty()) {
+            Pair cur = pq.poll();
+            int node = cur.node;
+            int diff = cur.distance;
+
+            for(Pair pp : adjList.get(node)) {
+                int newNode = pp.node;
+                int newDist = pp.distance;
+
+                if(distance[newNode] > diff+newDist) {
+                    distance[newNode] = diff+newDist;
+                    pq.add(new Pair(newNode, diff+newDist));
                 }
             }
         }
+        int res = Integer.MIN_VALUE;
+        for(int i = 1; i <= n; i++) {
+            if(distance[i] == Integer.MAX_VALUE) return -1;
+            else {
+                res = Math.max(res, distance[i]);
+            }
+        }
 
-        if(dist.size() == n)
-            return Collections.max(dist.values());
-
-        return -1;
+        return res;
     }
-    
 }
