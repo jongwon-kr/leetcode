@@ -1,27 +1,21 @@
 class Solution {
     public void sortColors(int[] nums) {
-        
-        Map<Integer, Integer> colorsMap = new HashMap<>();
-        for(int i : nums) {
-            colorsMap.put(i, colorsMap.getOrDefault(i, 0) + 1);
-        }
+        int red = 0, white = 0, blue = nums.length;
 
-        int cnt = 0;
-        if(colorsMap.containsKey(0)){
-            for(int i = 0; i < colorsMap.get(0); i++){
-                nums[cnt++] = 0;
-            }
-        }
-        
-        if(colorsMap.containsKey(1)){
-            for(int i = 0; i < colorsMap.get(1); i++){
-                nums[cnt++] = 1;
-            }
-        }
-        
-        if(colorsMap.containsKey(2)){
-            for(int i = 0; i < colorsMap.get(2); i++){
-                nums[cnt++] = 2;
+        while (white < blue) {
+            if (nums[white] < 1) {
+                int temp = nums[red];
+                nums[red] = nums[white];
+                nums[white] = temp;
+                red++;
+                white++;
+            } else if (nums[white] > 1) {
+                blue--;
+                int temp = nums[white];
+                nums[white] = nums[blue];
+                nums[blue] = temp;
+            } else {
+                white++;
             }
         }
     }
