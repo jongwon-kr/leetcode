@@ -8,16 +8,16 @@ class Solution {
         Arrays.sort(s);
         Arrays.sort(g);
         
-        for(int i = 0; i < g.length; i++){
+        int i = 0;
+        int j = 0;
+        
+        while(i < g.length && j < s.length){
             int gSize = g[i];
 
-            for(int j = 0; j < s.length; j++){
-                if(gSize <= s[j]){
-                    result++;
-                    s[j] = 0;
-                    break;
-                }
+            if(gSize <= s[j]){
+                reuslt++;
             }
+            j++;
         }
 
         return result;
