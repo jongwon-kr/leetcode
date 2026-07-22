@@ -1,47 +1,22 @@
 class Solution {
     public boolean isValid(String s) {
-        Stack<Character> stack = new Stack<>();
+        
+        ArrayDeque<Character> adq = new ArrayDeque<>();
 
         for (char c : s.toCharArray()) {
-            char ch;
-            boolean isPop = false;
-            if(!stack.isEmpty()){
-                switch (c) {
-                    case ')':
-                        ch = stack.pop();
-                        if(ch == '('){
-                            isPop = true;
-                        }else{
-                            return false;
-                        }
-                        break;
-                    case '}':
-                        ch = stack.pop();
-                        if(ch == '{'){
-                            isPop = true;
-                        }else{
-                            return false;
-                        }
-                        break;
-                    case ']':
-                        ch = stack.pop();
-                        if(ch == '['){
-                            isPop = true;
-                        }else{
-                            return false;
-                        }
-                        break;
-                    default:
-                        break;
+            if (!adq.isEmpty()) {
+                char cur = adq.peek();
+                if ((cur == '(' && c == ')') || (cur == '{' && c == '}') || (cur == '[' && c == ']')) {
+                    adq.pop();
+                } else {
+                    adq.push(c);
                 }
-            }
-
-            if(!isPop){
-                stack.push(c);
+            } else {
+                adq.push(c);
             }
         }
 
-        if(stack.size() != 0){
+        if (adq.size() > 0) {
             return false;
         }
 
