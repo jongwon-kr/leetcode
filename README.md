@@ -31,8 +31,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/jongwon-kr/leetcode/tree/main/0001-two-sum/) | Easy |
+| [0739-daily-temperatures](https://github.com/jongwon-kr/leetcode/tree/main/0739-daily-temperatures/) | Medium |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/jongwon-kr/leetcode/tree/main/0020-valid-parentheses/) | Easy |
+| [0739-daily-temperatures](https://github.com/jongwon-kr/leetcode/tree/main/0739-daily-temperatures/) | Medium |
+## Monotonic Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0739-daily-temperatures](https://github.com/jongwon-kr/leetcode/tree/main/0739-daily-temperatures/) | Medium |
 <!---LeetCode Topics End-->
