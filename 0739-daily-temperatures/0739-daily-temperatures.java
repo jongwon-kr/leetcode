@@ -1,27 +1,18 @@
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
+        int n = temperatures.length;
+        int[] results = new int[n];
+        ArrayDeque<Integer> stack = new ArrayDeque<>();
 
-        int[] results = new int[temperatures.length];
-
-        int minWarmer = 1000000, left = 0, right = 0;
-        for(int i = 0; i < temperatures.length; i++){
-            minWarmer = 1000000;
-            left = i + 1;
-            right = temperatures.length - 1;
-
-            while(left <= right){
-                if(temperatures[i] < temperatures[left]){
-                    minWarmer = Math.min(left - i, minWarmer);
-                    results[i] = minWarmer;
-                }
-                if(temperatures[i] < temperatures[right]){
-                    minWarmer = Math.min(right - i, minWarmer);
-                    results[i] = minWarmer;
-                }
-                left++;
-                right--;
+        for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && temperatures[i] > temperatures[stack.peek()]) {
+                int prevIndex = stack.pop();
+                results[prevIndex] = i - prevIndex;
             }
+            stack.push(i);
         }
+
+        
         return results;
     }
 }
