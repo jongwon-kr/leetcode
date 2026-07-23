@@ -3,8 +3,6 @@ import java.io.*;
 
 class Solution {
     public int evalRPN(String[] tokens) {
-        // 후위 표기법 계산 숫자 2개가 오고 연산자가 오게 되면 먼저 계산한다.
-        // stack으로해서 이전 2개의 입력값 저장해두고 연산자가 오면 계산 하고 pop하면될듯
 
         ArrayDeque<String> adq = new ArrayDeque<>();
 
