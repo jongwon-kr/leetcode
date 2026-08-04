@@ -34,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/jongwon-kr/leetcode/tree/main/0001-two-sum/) | Easy |
+| [0130-surrounded-regions](https://github.com/jongwon-kr/leetcode/tree/main/0130-surrounded-regions/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jongwon-kr/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0200-number-of-islands](https://github.com/jongwon-kr/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0239-sliding-window-maximum](https://github.com/jongwon-kr/leetcode/tree/main/0239-sliding-window-maximum/) | Hard |
@@ -72,6 +73,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0130-surrounded-regions](https://github.com/jongwon-kr/leetcode/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/jongwon-kr/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/jongwon-kr/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0695-max-area-of-island](https://github.com/jongwon-kr/leetcode/tree/main/0695-max-area-of-island/) | Medium |
@@ -80,6 +82,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0127-word-ladder](https://github.com/jongwon-kr/leetcode/tree/main/0127-word-ladder/) | Hard |
+| [0130-surrounded-regions](https://github.com/jongwon-kr/leetcode/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/jongwon-kr/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0542-01-matrix](https://github.com/jongwon-kr/leetcode/tree/main/0542-01-matrix/) | Medium |
 | [0547-number-of-provinces](https://github.com/jongwon-kr/leetcode/tree/main/0547-number-of-provinces/) | Medium |
@@ -90,12 +93,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0130-surrounded-regions](https://github.com/jongwon-kr/leetcode/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/jongwon-kr/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/jongwon-kr/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0695-max-area-of-island](https://github.com/jongwon-kr/leetcode/tree/main/0695-max-area-of-island/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0130-surrounded-regions](https://github.com/jongwon-kr/leetcode/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/jongwon-kr/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0542-01-matrix](https://github.com/jongwon-kr/leetcode/tree/main/0542-01-matrix/) | Medium |
 | [0695-max-area-of-island](https://github.com/jongwon-kr/leetcode/tree/main/0695-max-area-of-island/) | Medium |
