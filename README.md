@@ -72,6 +72,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/jongwon-kr/leetcode/tree/main/0200-number-of-islands/) | Medium |
+| [0547-number-of-provinces](https://github.com/jongwon-kr/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/jongwon-kr/leetcode/tree/main/0733-flood-fill/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -79,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0127-word-ladder](https://github.com/jongwon-kr/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0200-number-of-islands](https://github.com/jongwon-kr/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0542-01-matrix](https://github.com/jongwon-kr/leetcode/tree/main/0542-01-matrix/) | Medium |
+| [0547-number-of-provinces](https://github.com/jongwon-kr/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/jongwon-kr/leetcode/tree/main/0733-flood-fill/) | Easy |
 | [0994-rotting-oranges](https://github.com/jongwon-kr/leetcode/tree/main/0994-rotting-oranges/) | Medium |
 | [1091-shortest-path-in-binary-matrix](https://github.com/jongwon-kr/leetcode/tree/main/1091-shortest-path-in-binary-matrix/) | Medium |
@@ -86,6 +88,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/jongwon-kr/leetcode/tree/main/0200-number-of-islands/) | Medium |
+| [0547-number-of-provinces](https://github.com/jongwon-kr/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -98,4 +101,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0542-01-matrix](https://github.com/jongwon-kr/leetcode/tree/main/0542-01-matrix/) | Medium |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0547-number-of-provinces](https://github.com/jongwon-kr/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 <!---LeetCode Topics End-->
