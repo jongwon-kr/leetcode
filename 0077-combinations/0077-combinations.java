@@ -1,22 +1,28 @@
-import java.util.*;
-
 class Solution {
+
+    List<List<Integer>> result = new ArrayList<>();
+
     public List<List<Integer>> combine(int n, int k) {
-        List<List<Integer>> result = new ArrayList<>();
-        backtrack(result, new ArrayList<>(), n, k, 1);
+        // 1 ~ n 까지의 수를 가지고 K개의 숫자로 가능한 모든 조합 반환
+
+        List<Integer> list = new ArrayList<>();
+
+        bt(1, n, k, list);
+
         return result;
     }
 
-    private void backtrack(List<List<Integer>> result, List<Integer> tempList, int n, int k, int start) {
-        if (tempList.size() == k) {
-            result.add(new ArrayList<>(tempList));
-            return;
+    private void bt(int start, int n, int k, List<Integer> list) {
+
+        if (list.size() == k) {
+            result.add(new ArrayList<>(list));
         }
 
         for (int i = start; i <= n; i++) {
-            tempList.add(i);
-            backtrack(result, tempList, n, k, i + 1);
-            tempList.remove(tempList.size() - 1);
+            list.add(i);
+            bt(i + 1, n, k, list);
+            list.remove(list.size() - 1);
         }
+
     }
 }
