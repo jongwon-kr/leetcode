@@ -35,6 +35,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0001-two-sum](https://github.com/jongwon-kr/leetcode/tree/main/0001-two-sum/) | Easy |
 | [0046-permutations](https://github.com/jongwon-kr/leetcode/tree/main/0046-permutations/) | Medium |
+| [0078-subsets](https://github.com/jongwon-kr/leetcode/tree/main/0078-subsets/) | Medium |
 | [0130-surrounded-regions](https://github.com/jongwon-kr/leetcode/tree/main/0130-surrounded-regions/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jongwon-kr/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0200-number-of-islands](https://github.com/jongwon-kr/leetcode/tree/main/0200-number-of-islands/) | Medium |
@@ -126,10 +127,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0078-subsets](https://github.com/jongwon-kr/leetcode/tree/main/0078-subsets/) | Medium |
 | [0779-k-th-symbol-in-grammar](https://github.com/jongwon-kr/leetcode/tree/main/0779-k-th-symbol-in-grammar/) | Medium |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0046-permutations](https://github.com/jongwon-kr/leetcode/tree/main/0046-permutations/) | Medium |
 | [0077-combinations](https://github.com/jongwon-kr/leetcode/tree/main/0077-combinations/) | Medium |
+| [0078-subsets](https://github.com/jongwon-kr/leetcode/tree/main/0078-subsets/) | Medium |
 <!---LeetCode Topics End-->
