@@ -59,6 +59,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0050-powx-n](https://github.com/jongwon-kr/leetcode/tree/main/0050-powx-n/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jongwon-kr/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
+| [0779-k-th-symbol-in-grammar](https://github.com/jongwon-kr/leetcode/tree/main/0779-k-th-symbol-in-grammar/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -120,4 +121,9 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0050-powx-n](https://github.com/jongwon-kr/leetcode/tree/main/0050-powx-n/) | Medium |
+| [0779-k-th-symbol-in-grammar](https://github.com/jongwon-kr/leetcode/tree/main/0779-k-th-symbol-in-grammar/) | Medium |
+## Bit Manipulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0779-k-th-symbol-in-grammar](https://github.com/jongwon-kr/leetcode/tree/main/0779-k-th-symbol-in-grammar/) | Medium |
 <!---LeetCode Topics End-->
