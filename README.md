@@ -131,4 +131,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0046-permutations](https://github.com/jongwon-kr/leetcode/tree/main/0046-permutations/) | Medium |
+| [0077-combinations](https://github.com/jongwon-kr/leetcode/tree/main/0077-combinations/) | Medium |
 <!---LeetCode Topics End-->
