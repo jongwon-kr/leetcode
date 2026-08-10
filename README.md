@@ -34,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/jongwon-kr/leetcode/tree/main/0001-two-sum/) | Easy |
+| [0039-combination-sum](https://github.com/jongwon-kr/leetcode/tree/main/0039-combination-sum/) | Medium |
 | [0046-permutations](https://github.com/jongwon-kr/leetcode/tree/main/0046-permutations/) | Medium |
 | [0078-subsets](https://github.com/jongwon-kr/leetcode/tree/main/0078-subsets/) | Medium |
 | [0130-surrounded-regions](https://github.com/jongwon-kr/leetcode/tree/main/0130-surrounded-regions/) | Medium |
@@ -132,6 +133,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0039-combination-sum](https://github.com/jongwon-kr/leetcode/tree/main/0039-combination-sum/) | Medium |
 | [0046-permutations](https://github.com/jongwon-kr/leetcode/tree/main/0046-permutations/) | Medium |
 | [0077-combinations](https://github.com/jongwon-kr/leetcode/tree/main/0077-combinations/) | Medium |
 | [0078-subsets](https://github.com/jongwon-kr/leetcode/tree/main/0078-subsets/) | Medium |
