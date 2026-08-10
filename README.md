@@ -20,6 +20,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0047-permutations-ii](https://github.com/jongwon-kr/leetcode/tree/main/0047-permutations-ii/) | Medium |
 | [0242-valid-anagram](https://github.com/jongwon-kr/leetcode/tree/main/0242-valid-anagram/) | Easy |
 ## Queue
 | Problem Name | Difficulty |
@@ -36,6 +37,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0001-two-sum](https://github.com/jongwon-kr/leetcode/tree/main/0001-two-sum/) | Easy |
 | [0039-combination-sum](https://github.com/jongwon-kr/leetcode/tree/main/0039-combination-sum/) | Medium |
 | [0046-permutations](https://github.com/jongwon-kr/leetcode/tree/main/0046-permutations/) | Medium |
+| [0047-permutations-ii](https://github.com/jongwon-kr/leetcode/tree/main/0047-permutations-ii/) | Medium |
 | [0078-subsets](https://github.com/jongwon-kr/leetcode/tree/main/0078-subsets/) | Medium |
 | [0130-surrounded-regions](https://github.com/jongwon-kr/leetcode/tree/main/0130-surrounded-regions/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jongwon-kr/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
@@ -135,6 +137,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0039-combination-sum](https://github.com/jongwon-kr/leetcode/tree/main/0039-combination-sum/) | Medium |
 | [0046-permutations](https://github.com/jongwon-kr/leetcode/tree/main/0046-permutations/) | Medium |
+| [0047-permutations-ii](https://github.com/jongwon-kr/leetcode/tree/main/0047-permutations-ii/) | Medium |
 | [0077-combinations](https://github.com/jongwon-kr/leetcode/tree/main/0077-combinations/) | Medium |
 | [0078-subsets](https://github.com/jongwon-kr/leetcode/tree/main/0078-subsets/) | Medium |
 <!---LeetCode Topics End-->
