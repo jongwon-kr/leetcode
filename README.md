@@ -38,6 +38,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0039-combination-sum](https://github.com/jongwon-kr/leetcode/tree/main/0039-combination-sum/) | Medium |
 | [0046-permutations](https://github.com/jongwon-kr/leetcode/tree/main/0046-permutations/) | Medium |
 | [0047-permutations-ii](https://github.com/jongwon-kr/leetcode/tree/main/0047-permutations-ii/) | Medium |
+| [0051-n-queens](https://github.com/jongwon-kr/leetcode/tree/main/0051-n-queens/) | Hard |
 | [0078-subsets](https://github.com/jongwon-kr/leetcode/tree/main/0078-subsets/) | Medium |
 | [0090-subsets-ii](https://github.com/jongwon-kr/leetcode/tree/main/0090-subsets-ii/) | Medium |
 | [0130-surrounded-regions](https://github.com/jongwon-kr/leetcode/tree/main/0130-surrounded-regions/) | Medium |
@@ -140,7 +141,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0039-combination-sum](https://github.com/jongwon-kr/leetcode/tree/main/0039-combination-sum/) | Medium |
 | [0046-permutations](https://github.com/jongwon-kr/leetcode/tree/main/0046-permutations/) | Medium |
 | [0047-permutations-ii](https://github.com/jongwon-kr/leetcode/tree/main/0047-permutations-ii/) | Medium |
+| [0051-n-queens](https://github.com/jongwon-kr/leetcode/tree/main/0051-n-queens/) | Hard |
 | [0077-combinations](https://github.com/jongwon-kr/leetcode/tree/main/0077-combinations/) | Medium |
 | [0078-subsets](https://github.com/jongwon-kr/leetcode/tree/main/0078-subsets/) | Medium |
 | [0090-subsets-ii](https://github.com/jongwon-kr/leetcode/tree/main/0090-subsets-ii/) | Medium |
+## Algorithm X
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0051-n-queens](https://github.com/jongwon-kr/leetcode/tree/main/0051-n-queens/) | Hard |
 <!---LeetCode Topics End-->
