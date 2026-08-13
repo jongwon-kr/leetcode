@@ -1,61 +1,56 @@
 import java.util.*;
+import java.io.*;
 
 class Solution {
-    List<List<String>> results;
-    char[][] board;
-    int n;
+    List<List<String>> result;
 
     public List<List<String>> solveNQueens(int n) {
-        this.results = new ArrayList<>();
-        this.n = n;
-        this.board = new char[n][n];
+        result = new ArrayList<>();
+        if (n <= 0) return result;
 
+        // 체크 배열 : 행, 우하대각, 좌하대각
+        boolean[] rCheck = new boolean[n];
+        boolean[] rbdCheck = new boolean[2 * n];
+        boolean[] lbdCheck = new boolean[2 * n];
+
+        char[][] map = new char[n][n];
         for (int i = 0; i < n; i++) {
-            Arrays.fill(board[i], '.');
+            Arrays.fill(map[i], '.');
         }
 
-        backtrack(0);
-        return results;
+        bt(0, n, map, rCheck, rbdCheck, lbdCheck);
+
+        return result;
     }
 
-    private void backtrack(int row) {
-        if (row == n) {
-            List<String> solution = new ArrayList<>();
-            for (char[] r : board) {
-                solution.add(new String(r));
+    private void bt(int row, int n, char[][] map, boolean[] rCheck, boolean[] rbdCheck, boolean[] lbdCheck) {
+
+        if (row == n) { // 종료 조건
+            List<String> list = new ArrayList<>();
+            for (int i = 0; i < n; i++) {
+                list.add(new String(map[i]));
             }
-            results.add(solution);
+            result.add(list);
             return;
         }
 
         for (int col = 0; col < n; col++) {
-            if (isSafe(row, col)) {
-                board[row][col] = 'Q';
-                backtrack(row + 1);
-                board[row][col] = '.';
-            }
-        }
-    }
+            int rbd = row + col;
+            int lbd = row - col + n;
 
-    private boolean isSafe(int row, int col) {
-        for (int i = 0; i < row; i++) {
-            if (board[i][col] == 'Q') {
-                return false;
-            }
-        }
+            if (rCheck[col] || rbdCheck[rbd] || lbdCheck[lbd]) continue;
 
-        for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--) {
-            if (board[i][j] == 'Q') {
-                return false;
-            }
-        }
+            map[row][col] = 'Q';
+            rCheck[col] = true;
+            rbdCheck[rbd] = true;
+            lbdCheck[lbd] = true;
 
-        for (int i = row - 1, j = col + 1; i >= 0 && j < n; i--, j++) {
-            if (board[i][j] == 'Q') {
-                return false;
-            }
+            bt(row + 1, n, map, rCheck, rbdCheck, lbdCheck);
+
+            map[row][col] = '.';
+            rCheck[col] = false;
+            rbdCheck[rbd] = false;
+            lbdCheck[lbd] = false;
         }
-        
-        return true;
     }
 }
