@@ -39,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0046-permutations](https://github.com/jongwon-kr/leetcode/tree/main/0046-permutations/) | Medium |
 | [0047-permutations-ii](https://github.com/jongwon-kr/leetcode/tree/main/0047-permutations-ii/) | Medium |
 | [0051-n-queens](https://github.com/jongwon-kr/leetcode/tree/main/0051-n-queens/) | Hard |
+| [0054-spiral-matrix](https://github.com/jongwon-kr/leetcode/tree/main/0054-spiral-matrix/) | Medium |
 | [0078-subsets](https://github.com/jongwon-kr/leetcode/tree/main/0078-subsets/) | Medium |
 | [0090-subsets-ii](https://github.com/jongwon-kr/leetcode/tree/main/0090-subsets-ii/) | Medium |
 | [0130-surrounded-regions](https://github.com/jongwon-kr/leetcode/tree/main/0130-surrounded-regions/) | Medium |
@@ -109,6 +110,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0054-spiral-matrix](https://github.com/jongwon-kr/leetcode/tree/main/0054-spiral-matrix/) | Medium |
 | [0130-surrounded-regions](https://github.com/jongwon-kr/leetcode/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/jongwon-kr/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0542-01-matrix](https://github.com/jongwon-kr/leetcode/tree/main/0542-01-matrix/) | Medium |
@@ -149,4 +151,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0051-n-queens](https://github.com/jongwon-kr/leetcode/tree/main/0051-n-queens/) | Hard |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0054-spiral-matrix](https://github.com/jongwon-kr/leetcode/tree/main/0054-spiral-matrix/) | Medium |
 <!---LeetCode Topics End-->
