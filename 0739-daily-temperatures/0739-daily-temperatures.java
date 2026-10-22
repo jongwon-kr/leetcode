@@ -1,18 +1,20 @@
+import java.util.*;
+
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
-        int n = temperatures.length;
-        int[] results = new int[n];
-        ArrayDeque<Integer> stack = new ArrayDeque<>();
+        int[] answer = new int[temperatures.length];
 
-        for (int i = 0; i < n; i++) {
-            while (!stack.isEmpty() && temperatures[i] > temperatures[stack.peek()]) {
-                int prevIndex = stack.pop();
-                results[prevIndex] = i - prevIndex;
+        // 인덱스를 저장할 스택
+        ArrayDeque<Integer> adq = new ArrayDeque<>();
+
+        for (int i = 0; i < temperatures.length; i++) {
+            while (!adq.isEmpty() && temperatures[i] > temperatures[adq.peek()]) {
+                int prevIndex = adq.pop();
+                answer[prevIndex] = i - prevIndex;
             }
-            stack.push(i);
+            adq.push(i);
         }
 
-        
-        return results;
+        return answer;
     }
 }
