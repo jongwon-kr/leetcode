@@ -1,30 +1,32 @@
 import java.util.*;
-import java.io.*;
 
 class Solution {
-
-    List<List<Integer>> result;
-
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        result = new ArrayList<>();
-        dfs(0, 0, target, candidates, new ArrayList<>());
-        return result;
+        List<List<Integer>> answer = new ArrayList<>();
+
+        Arrays.sort(candidates);
+        dfs(candidates, 0, 0, new ArrayList<>(), answer, target);
+
+        return answer;
     }
 
-    private void dfs(int idx, int sum, int target, int[] cand, List<Integer> list) {
-        if (sum == target) {
-            result.add(new ArrayList<>(list));
-            return;
-        }
-
+    private void dfs(int[] candidates, int sum, int start, List<Integer> cList, List<List<Integer>> answer, int target) {
         if (sum > target) {
             return;
         }
+        if (sum == target) {
+            answer.add(new ArrayList<>(cList));
+            return;
+        }
 
-        for (int i = idx; i < cand.length; i++) {
-            list.add(cand[i]);
-            dfs(i, sum + cand[i], target, cand, list);
-            list.remove(list.size() - 1);
+        for (int i = start; i < candidates.length; i++) {
+
+            if (sum + candidates[i] > target) {
+                break;
+            }
+            cList.add(candidates[i]);
+            dfs(candidates, sum + candidates[i], i, cList, answer, target);
+            cList.remove(cList.size() - 1);
         }
     }
 }
