@@ -1,46 +1,48 @@
 import java.util.*;
-import java.io.*;
 
 class Solution {
 
-    static int[] dx = {-1, 1, 0, 0};
-    static int[] dy = {0, 0, -1, 1};
-    static int  m = 0, n = 0;
+    static int[] dx = {1, -1, 0, 0};
+    static int[] dy = {0, 0, 1, -1};
+    static boolean[][] visited;
+    static int n, m;
 
     public int[][] updateMatrix(int[][] mat) {
-        // 모든 셀에 대해서 BFS를 통해서 가장 가까운 0과의 거리를 반환
-        ArrayDeque<int[]> q = new ArrayDeque<>();
         m = mat.length;
         n = mat[0].length;
-        int[][] result = new int[m][n];
-        for (int[] arr : result) {
-            Arrays.fill(arr, -1);
-        }
+        visited = new boolean[m][n];
+        ArrayDeque<int[]> adq = new ArrayDeque<>();
 
+        // 0을 찾아서 queue에 넣고 1씩 증가시키도록
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (mat[i][j] == 0) {
-                    result[i][j] = 0;
-                    q.offer(new int[]{i, j, 0});
+                    adq.offer(new int[]{i, j, 0});
+                    visited[i][j] = true;
+                } else {
+                    mat[i][j] = -1;
                 }
             }
         }
 
-        while (!q.isEmpty()) {
-            int[] cur = q.poll();
-            
-            for (int i = 0; i < 4; i ++) {
-                int nx = cur[0] + dx[i];
-                int ny = cur[1] + dy[i];
-                int dist = cur[2] + 1;
+        while (!adq.isEmpty()) {
+            int[] cur = adq.poll();
+            int cx = cur[0];
+            int cy = cur[1];
+            int distance = cur[2] + 1;
 
-                if (nx >= m || nx < 0 || ny >= n || ny < 0) continue;
-                if (result[nx][ny] != -1) continue;
-                
-                result[nx][ny] = dist;
-                q.offer(new int[]{nx, ny, dist});
+            for (int i = 0; i < 4; i++) {
+                int nx = cx + dx[i];
+                int ny = cy + dy[i];
+
+                if (nx < 0 || nx >= m || ny < 0 || ny >= n) continue;
+                if (mat[nx][ny] == 0 || visited[nx][ny]) continue;
+
+                visited[nx][ny] = true;
+                mat[nx][ny] = distance;
+                adq.offer(new int[]{nx, ny, distance});
             }
         }
-        return result;
+        return mat;
     }
 }
