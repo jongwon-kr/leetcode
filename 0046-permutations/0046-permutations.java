@@ -1,32 +1,36 @@
+import java.util.*;
+
 class Solution {
-
-    List<List<Integer>> result = new ArrayList<>();
-
     public List<List<Integer>> permute(int[] nums) {
-        // 순서 상관없이 가능한 모든 순열 반환 백트래킹
-        int n = nums.length;
-        boolean[] isUsed = new boolean[n];
-        List<Integer> list = new ArrayList<>();
+        List<List<Integer>> answer = new ArrayList<>();
+        boolean[] visited = new boolean[nums.length];
+        List<Integer> current = new ArrayList<>();
 
-        bt(0, nums, isUsed, list);
-        
-        return result;
+        dfs(nums, visited, current, answer);
+
+        return answer;
     }
 
-    private void bt(int depth, int[] nums, boolean[] isUsed, List<Integer> list) {
+    public void dfs(int[] nums, boolean[] visited, List<Integer> current, List<List<Integer>> answer) {
 
-        if (depth == nums.length) {
-            result.add(new ArrayList<>(list));
+        if (current.size() == nums.length) {
+            answer.add(new ArrayList<>(current));
             return;
         }
 
         for (int i = 0; i < nums.length; i++) {
-            if (isUsed[i]) continue;
-            isUsed[i] = true;
-            list.add(nums[i]);
-            bt(depth + 1, nums, isUsed, list);
-            isUsed[i] = false;
-            list.remove(list.size() - 1);
+            if (visited[i]) continue;
+
+            // 방문 체크
+            visited[i] = true;
+            current.add(nums[i]);
+
+            // 다음 요소 넣기
+            dfs(nums, visited, current, answer);
+
+            // 가지치기(방문체크 롤백)
+            current.remove(current.size() - 1);
+            visited[i] = false;
         }
     }
 }
